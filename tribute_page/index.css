@@ -1,0 +1,95 @@
+:root{
+
+    --primary-1: rgb(20, 20, 20);
+    --primary-2: rgb(17, 17, 17);
+    --secondary-1:#e2e2e2;
+    --secondary-2:#afafaf;
+}
+.title{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3.6em;
+    font-weight: 600;
+    margin-top: 1em;
+    color: var(--primary-2);
+}
+.subtitle{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 5vmin;
+    font-weight: 300;
+}
+.caption{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2em;
+    font-weight: 100;
+    color: var(--primary-1);
+    
+}
+.content{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    width: 70%;
+    margin: auto;
+    text-align: justify;
+    line-height: 4vh;
+    color: var(--primary-1);
+}
+.center{
+    text-align: center;
+}
+.center-image {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+html{
+    height: 100%;
+    margin: 0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: auto;
+    background: linear-gradient(45deg, rgb(255, 145, 145), rgb(164, 210, 248));
+}
+#main{
+    flex: 1;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    background-color: white;
+}
+footer{
+    background-color: var(--primary-1);
+    color: var(--secondary-1);
+}
+header{
+    background-color: var(--primary-1);
+    color: var(--secondary-1);
+}
+.header{
+    background-color: var(--primary-1);
+    color: var(--secondary-1);
+}
+.footer{
+    background-color: var(--primary-1);
+    color: var(--secondary-1);
+}
+a.footer{
+    color: rgb(104, 104, 104);
+}
+a.footer:hover{
+    color: lightskyblue;
+}
+#image{
+    border-color: var(--primary-2);
+    border-width: 0.3em;
+    border-radius: 50%;
+    border-style: solid;
+}
