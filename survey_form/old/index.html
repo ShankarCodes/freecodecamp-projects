@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Survey form
+    </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--script src="https://unpkg.com/@babel/standalone/babel.min.js"></script-->
+    <!--script type="text/babel" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script-->
+    <script src="bundle.build.js" defer></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="title" class="title centered">
+            Environment Survey Form
+        </h1>
+        <p id="description" class="centered subtitle">
+            Thank you for taking part in our survey.
+        </p>
+        <form id="survey-form" class="form-class">
+            <label for="name" id="name-label" class="form-input">
+                Name
+                <input type="text" id="name" required placeholder="Name">
+            </label>
+            <label for="email" id="email-label" class="form-input">
+                Email
+                <input type="email" id="email" required placeholder="Email">
+            </label>
+            <label for="number" id="number-label" class="form-input">
+                Age
+                <input type="number" id="number" min=1 max=100 placeholder="Age">
+            </label>
+            <label for="dropdown" id="dropdown-label" class="form-input">
+                Mode of transport
+                <select id="dropdown">
+                    <option value="" selected disabled hidden>Mode of transport</option>
+                    <option value="car">car</option>
+                    <option value="bus">bus</option>
+                    <option value="two_wheeler">two wheeler</option>
+                    <option value="cycle">cycle</option>
+                    <option value="walk">walk</option>
+                </select>
+            </label>
+            <label for="radio" id="electricty_c" class="form-input">
+                Electricity Consumption
+                <span>
+                    <label class="form-input content">
+                        <input type="radio" value="g100 units" name="elec">
+                        Greater than 100 units
+                    </label>
+                    <label class="form-input content">
+                        <input type="radio" value="g100" name="elec">
+                        90 - 100 units
+                    </label>
+                    <label class="form-input content">
+                        <input type="radio" value="80_90" name="elec">
+                        80 - 90 units
+                    </label>
+                    <label class="form-input content">
+                        <input type="radio" value="70_80" name="elec">
+                        70 - 80 units
+                    </label>
+                    <label class="form-input content">
+                        <input type="radio" value="60_70" name="elec">
+                        60 - 70 units
+                    </label>
+                    <label class="form-input content">
+                        <input type="radio" value="50_60" name="elec">
+                        50 - 80 units
+                    </label>
+                    <label class="form-input content">
+                        <input type="radio" value="l50" name="elec">
+                        Less than 50 units
+                    </label>
+                </span>
+            </label>
+
+        </form>
+    </div>
+</body>
+
+</html>

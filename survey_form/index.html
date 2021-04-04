@@ -4,21 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Survey form
-    </title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="visuals.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <!--script src="https://unpkg.com/@babel/standalone/babel.min.js"></script-->
-    <!--script type="text/babel" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script-->
     <script src="bundle.build.js" defer></script>
-
+    <title>
+        Environment Survey Form
+    </title>
 </head>
 
 <body>
-    <div id="main">
+    <div id="main-container" class="main-container">
+        <div class="top">
+            <h1 id="title">
+                Environment Survey Form
+            </h1>
+            <p id="description">
+                Thank you for participating in this survey.
+            </p>
+        </div>
+        <div>
+            <form class="form-container" id="survey-form">
+                <div class="form-row">
+                    <label for="name" id="name-label">Name:</label>
+                    <input type="text" id="name" required placeholder="Your name">
+                </div>
 
+                <div class="form-row">
+                    <label for="email" id="email-label">Email:</label>
+                    <input type="email" id="email" required placeholder="Your email">
+                </div>
+
+                <div class="form-row">
+                    <label for="number" id="number-label">Age:</label>
+                    <input type="number" id="number" min=1 max=100 placeholder="Your age">
+                </div>
+                <div class="form-row">
+                    <p class="label-text">Mode of transport</p>
+                    <div class="form-radio multi-container">
+                        <div class="multi-group">
+                            <input id="walk" name="mot" type="radio" value="walk">
+                            <label for="walk">Walk</label>
+                        </div>
+
+                        <div class="multi-group">
+                            <input id="two-wheeler" name="mot" type="radio" value="tw">
+                            <label for="two-wheeler">Two wheeler</label>
+                        </div>
+
+                        <div class="multi-group">
+                            <input id="four-wheeler" name="mot" type="radio" value="fw">
+                            <label for="four-wheeler">Four wheeler</label>
+                        </div>
+
+                        <div class="multi-group">
+                            <input id="publictransport" name="mot" type="radio" value="public">
+                            <label for="four-wheeler">Public transport</label>
+                        </div>
+
+                        <div class="multi-group">
+                            <input id="cycle" name="mot" type="radio" value="cycle">
+                            <label for="publictransport">Cycle</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <p class="label-text">
+                        How good is your surroundings?
+                    </p>
+                    <div class="multi-container">
+                        <select id="dropdown">
+                            <option value="" disabled hidden selected>Please choose</option>
+                            <option value="severe">severe</option>
+                            <option value="bad">bad</option>
+                            <option value="moderate">moderate</option>
+                            <option value="good">good</option>
+                            <option value="great">great</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <p class="label-text">
+                        What will you do to reduce pollution?
+                    </p>
+                    <div class="multi-container">
+                        <div class="multi-group">
+                            <input id="plastic" value="noplastic" type="checkbox">
+                            <label for="plastic">No Plastic</label>
+                        </div>
+                        <div class="multi-group">
+                            <input id="ptransport" value="publictransport" type="checkbox">
+                            <label for="ptransport">Use public transport</label>
+                        </div>
+                        <div class="multi-group">
+                            <input id="plastic" value="noplastic" type="checkbox">
+                            <label for="plastic">No Plastic</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="multi-container">
+                    <p class="label-text">
+                        Additional comments
+                    </p>
+                    <textarea placeholder="Additional comments" rows="10"> </textarea>
+                </div>
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </form>
+        </div>
     </div>
 </body>
 

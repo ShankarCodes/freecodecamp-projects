@@ -1,0 +1,104 @@
+/*debug mode
+*{
+    outline: rgba(182, 182, 182, 0.5) solid 2px;
+}
+*/
+/* The below contents are mostly for layout
+of the page
+*/
+.main-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    flex-wrap: wrap;
+}
+.top{
+    align-self: center;
+    text-align: center;
+    margin-bottom: 2vh;
+    width: 100%;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 40%;
+    flex-wrap: wrap;
+    padding: 0.5em;
+}
+.form-row{
+    display: flex;
+    margin: auto;
+    margin-bottom: 3vh;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.5em 0 0.5em 0;
+    flex-wrap: wrap;
+}
+.multi-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+.multi-group{
+    width: 100%;
+    margin-bottom: 1vh;
+    vertical-align: middle;
+    display:grid;
+    grid-template-columns: auto 1fr;
+}
+.multi-group input[type=radio], .multi-group input[type=checkbox]{
+    align-self: center;
+    justify-self: center;
+}
+input[type=text], input[type=email], input[type=number], textarea{
+    width: 80%;
+    padding: 0.4em;
+}
+.submit-button{
+    align-self: flex-end;
+}
+@media(min-width: 2000px){
+    .form-container{
+        width: 30%;
+    }
+}
+@media(max-width: 1500px){
+    .form-container{
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px){
+    .form-container{
+        width: 90%;
+    }
+}
+@media (max-width: 600px){
+    .form-container{
+        width: 100%;
+    }
+    .form-row{
+        flex-direction: column;
+    }
+    input, textarea{
+        width: 90%;
+    }
+    .multi-container{
+        width: 50%;
+        flex-wrap: nowrap;
+    }
+    .multi-group{
+        display:grid;
+        grid-template-columns: auto 1fr;
+    }
+    .multi-group > label{
+        white-space: nowrap;
+    }
+    input[type=radio]{
+        vertical-align: middle;
+    }
+}
