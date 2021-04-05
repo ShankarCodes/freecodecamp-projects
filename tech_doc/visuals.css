@@ -23,6 +23,7 @@
     font-weight: 500;
     color:rgb(255, 255, 238);
     background-color: rgba(17, 17, 17, 0.685);
+    padding: 1.5em;
 }
 .navigation{
     background-color: rgb(247, 247, 247);
@@ -46,7 +47,7 @@ code{
     color: rgb(252, 252, 244);
     font-size: 1.5em;
     font-weight: 400;
-    padding: 1em;
+    padding: 1.5em;
 }
 .footer a{
     color:rgb(156, 156, 156);
