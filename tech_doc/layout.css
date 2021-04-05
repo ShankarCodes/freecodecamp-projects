@@ -1,0 +1,83 @@
+body, html{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+        "hd"
+        "nv"
+        "ct"
+        "ft"
+    ;
+    height: 100%;
+}
+.header{
+    width: 100%;
+    grid-area: hd;
+    height: 8vh;
+}
+.navigation{
+    padding-top: 20vh;
+    grid-area: nv;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.content{
+    width: 100%;
+    grid-area: ct;
+}
+.content-container{
+    margin: auto;
+}
+.footer{
+    width: 100%;
+    grid-area: ft;
+    height: 10vh;
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px){
+    .grid-container{
+        grid-template-areas: 
+            "hd hd hd hd hd hd hd hd hd hd hd hd"
+            "nv nv nv nv nv nv nv nv nv nv nv nv"
+            ".  .  ct ct ct ct ct ct ct ct .  . "
+            ".  .  ct ct ct ct ct ct ct ct .  . "
+            ".  .  ct ct ct ct ct ct ct ct .  . "
+            "ft ft ft ft ft ft ft ft ft ft ft ft"
+            ;
+        }
+    .content-container{
+        width: 90%;
+        text-align: justify;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 961px){
+    .grid-container{
+        grid-template-areas: 
+            "hd hd hd hd hd hd hd hd hd hd hd hd"
+            "nv nv nv ct ct ct ct ct ct ct ct ct"
+            "nv nv nv ct ct ct ct ct ct ct ct ct"
+            "nv nv nv ct ct ct ct ct ct ct ct ct"
+            "nv nv nv ft ft ft ft ft ft ft ft ft"
+            ;
+    }
+
+    .content-container{
+        width: 60%;
+        text-align: justify;
+        /*margin: auto;*/
+        /*Use this if you want div to be centered*/
+        margin-right: 1em;
+        margin-left: 2em;
+    }
+    .navigation{
+        width: 10vw;
+    }
+}
+
