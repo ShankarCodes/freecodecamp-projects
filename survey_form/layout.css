@@ -101,4 +101,8 @@ input[type=text], input[type=email], input[type=number], textarea{
     input[type=radio]{
         vertical-align: middle;
     }
+    .multi-group input[type=radio], .multi-group input[type=checkbox]{
+        width: 20px;
+        height: 20px;
+    }
 }
