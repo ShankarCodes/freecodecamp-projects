@@ -46,3 +46,42 @@ img.logo{
 .footer{
     background-color: tomato;
 }
+.card{
+    background-color: rgb(247, 247, 247, 0.3);
+}
+.nav a{
+    color:rgb(255, 68, 68);
+    padding: 0.8em;
+    font-size: 1.1em;
+    font-weight: 500;
+    appearance: none;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid turquoise;
+}
+.nav a:hover{
+    color:rgb(3, 102, 109);
+    background-color:rgb(169, 255, 246)
+}
+.nav a:active{
+    color:rgb(33, 235, 250);
+    background-color: hsl(0, 0%, 95%);
+}
+.purchase{
+    color:turquoise;
+    padding: 0.8em;
+    font-size: 1.1em;
+    font-weight: 500;
+    appearance: none;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid tomato;
+}
+.purchase:hover{
+    color:rgb(105, 19, 2);
+    background-color:rgb(252, 164, 149);
+}
+.purchase:active{
+    color:rgb(204, 34, 12);
+    background-color: hsl(0, 0%, 95%);
+}
