@@ -38,6 +38,12 @@ body, html{
     grid-area: ft;
 }
 
+.stick{
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+}
+
 @media only screen and (min-width: 401px) and (max-width: 960px){
     .grid-container{
         grid-template-areas: 
