@@ -16,7 +16,9 @@ body, html{
 .header{
     width: 100%;
     grid-area: hd;
-    height: 8vh;
+
+    /*height: 8vh;*/
+    /* TODO: USE THIS IF HEIGHT NOT PROPER */
 }
 .navigation{
     padding-top: 20vh;
