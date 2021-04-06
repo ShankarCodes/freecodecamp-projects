@@ -31,9 +31,9 @@ img.logo{
 }
 #features{
     background: linear-gradient(
-        180deg,
+        0deg,
         turquoise,
-        tomato
+        rgb(41, 128, 119)
     );
 }
 #purchase{
