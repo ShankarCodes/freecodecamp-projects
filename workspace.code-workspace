@@ -7,7 +7,6 @@
 	],
 	"settings": {
 		"vim.vimrc.enable": true,
-		"vim.vimrc.path": "C:\\Users\\agnshank\\.vim\\.vimrc",
 		// Controls whether the diff editor shows changes in leading or trailing whitespace as diffs.
 		"diffEditor.ignoreTrimWhitespace": true,
 		// Controls whether the diff editor shows +/- indicators for added/removed changes.

@@ -2,6 +2,19 @@
     background-color: rgb(124, 60, 49);
     background-color: tomato;
     */
+:root{
+    --footer-color: hsl(0, 0%, 90%);
+    --header-color: hsl(0, 0%, 85%);
+    --content-color: none;
+    --nav-color: hsl(0, 0%, 80%);
+
+    --footer-bg-color: hsl(0, 0%, 10%);
+    --header-bg-color: hsl(0, 0%, 15%);
+    --content-bg-color:hsl(0, 0%, 95%);
+    --nav-bg-color:hsl(0, 0%, 20%);
+    /*--content-container-bg-color: white;*/
+    --content-container-bg-color: hsl(0, 0%, 97%);
+}
 *{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     scroll-behavior: smooth;
@@ -21,37 +34,42 @@
     text-align: center;
     font-size: 3em;
     font-weight: 500;
-    color:rgb(255, 255, 238);
-    background-color: rgba(17, 17, 17, 0.685);
-    padding: 1.5em;
+
+    color: var(--header-color);
+    background-color: var(--header-bg-color);
+
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
 }
 .navigation{
-    background-color: rgb(247, 247, 247);
+    color: var(--nav-color);
+    background-color: var(--nav-bg-color);
 }
 .content{
-    background-color: rgb(252, 252, 252);
+    color: var(--content-color);
+    background-color: var(--content-bg-color);
+}
+.content-container{
+    background-color: var(--content-container-bg-color);
 }
 code{
     text-align: left;
     display: block;
     word-wrap: normal;
     white-space: pre-line;
-    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 1em;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
-.stick{
-    position: sticky;
-    top: 0;
-}
 .footer{
+    color: var(--footer-color);
+    background-color: var(--footer-bg-color);
+
     text-align: center;
-    background-color: rgba(17, 17, 17, 0.863);
-    color: rgb(252, 252, 244);
     font-size: 1.5em;
     font-weight: 400;
-    padding: 1.5em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
 }
 .footer a{
     color:rgb(156, 156, 156);
@@ -61,4 +79,26 @@ code{
 }
 .footer a:visited{
     color: rgb(214, 2, 214);
+}
+.navigation a{
+    color:rgb(156, 156, 156);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 1.1em;
+    font-weight: 500;
+    background-color: hsl(0, 0%, 25%);
+    appearance: none;
+    text-decoration: none;
+}
+.navigation a:hover{
+    color:rgb(33, 235, 250);
+    background-color: hsl(0, 0%, 40%);
+}
+.navigation a:active{
+    color:rgb(33, 235, 250);
+    background-color: hsl(0, 0%, 55%);
+}
+.navigation-heading{
+    font-size: 1.3em;
+    font-weight: 600;
 }
