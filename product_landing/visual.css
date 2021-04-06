@@ -16,3 +16,33 @@ img.logo{
 .card:hover{
     box-shadow: 0 4px 20px rgba(0,0,0,0.4);
 }
+#about{
+    background: linear-gradient(
+        turquoise,
+        tomato
+    );
+}
+#demo{
+    background: linear-gradient(
+        0deg,
+        rgb(219, 252, 248),
+        rgb(255, 230, 226)
+    );
+}
+#features{
+    background: linear-gradient(
+        180deg,
+        turquoise,
+        tomato
+    );
+}
+#purchase{
+    background: linear-gradient(
+        90deg,
+        rgb(204, 255, 250),
+        rgb(255, 214, 207)
+    );
+}
+.footer{
+    background-color: tomato;
+}
