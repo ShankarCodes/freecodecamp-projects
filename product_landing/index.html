@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="visual.css">
+    <link rel="stylesheet" href="layout.css">
+
+    <script src="bundle.js" defer></script>
+    <title>
+        Product landing page
+    </title>
+</head>
+
+<body>
+    <div class="main-container">
+        <header id="header" class="header">
+            <nav id="nav-bar" class="nav">
+                <img id="header-img" src="rpi_logo.png" class="logo">
+                <div class="links">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#purchase" class="nav-link">Purchase</a>
+                    <a href="#demo" class="nav-link">Demo</a>
+                </div>
+            </nav>
+        </header>
+        <div class="content-wrapper">
+            <div class="content">
+                <section id="about" class="fullpage heading">
+                    <h3>
+                        About
+                    </h3>
+                    <p>
+                        Raspberry Pi is a small single-board computer.
+                    </p>
+                    <p>
+                        It is a low cost credit-card sized computer.
+                    </p>
+                    <p>
+                        Widely used in a large number of hobby projects as well as commercial ones.
+                    </p>
+                    <p>
+                        Get one today!
+                    </p>
+                </section>
+                <section id="demo" class="fullpage heading">
+                    <h3>
+                        Video
+                    </h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sajBySPeYH0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen id="video"></iframe>
+                </section>
+                <section id="features" class="fullpage heading">
+                    <h3>
+                        Features
+                    </h3>
+                    <ul>
+                        <li>
+                            The new raspberry pi 4 has a <b>4 x 1.5 ghz Cortex-A72 processor</b>
+                        </li>
+                        <li>
+                            Fast LPDDR4 ram which comes in 3 variants
+                            2GB, 4GB, 8GB.
+                        </li>
+                        <li>
+                            Drives 2 displays at 4K.
+                        </li>
+                        <li>
+                            Fast gigabit ethernet for unlimited web browsing and wireless networking for portability.
+                        </li>
+                        <li>
+                            Energy efficient, cooler and runs silently.
+                        </li>
+                    </ul>
+                </section>
+                <section id="purchase" class="fullpage">
+                    Choice 1 choice 2 choice 3
+                </section>
+            </div>
+        </div>
+        <footer class="footer">
+            <section id="newsletter">
+                Join our newsletter to get exciting offers and new deals.
+                <form id="form" action=" https://www.freecodecamp.com/email-submit">
+                    <input type="email" name="email" id="email" placeholder="Your email address">
+                    <input type="submit" id="submit" value="join">
+                </form>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>
