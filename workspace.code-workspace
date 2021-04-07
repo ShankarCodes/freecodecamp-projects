@@ -1268,5 +1268,6 @@
 		"hlsl.suggest.basic": true,
 		// Relative value of editor line height (absolute line height is computed based on editor font size and relative line height).
 		"relativeLineHeight.value": 0,
+		"liveServer.settings.host": "192.168.1.50"
 	}
 }

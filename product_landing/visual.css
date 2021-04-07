@@ -50,14 +50,21 @@ img.logo{
     background-color: rgb(247, 247, 247, 0.3);
 }
 .nav a{
-    color:rgb(255, 68, 68);
-    padding: 0.8em;
+    color:rgb(109, 0, 0);
+    background-color: rgba(203, 255, 250, 0.705);
     font-size: 1.1em;
     font-weight: 500;
     appearance: none;
     text-decoration: none;
     border-radius: 10px;
-    border: 1px solid turquoise;
+    border: 2px solid turquoise;
+}
+.nav{
+    background: linear-gradient(
+        90deg,
+        red,
+        blue
+    );
 }
 .nav a:hover{
     color:rgb(3, 102, 109);
@@ -68,7 +75,7 @@ img.logo{
     background-color: hsl(0, 0%, 95%);
 }
 .purchase{
-    color:turquoise;
+    color:rgb(41, 134, 125);
     padding: 0.8em;
     font-size: 1.1em;
     font-weight: 500;
@@ -84,4 +91,35 @@ img.logo{
 .purchase:active{
     color:rgb(204, 34, 12);
     background-color: hsl(0, 0%, 95%);
+}
+.footer p{
+    color:rgb(114, 0, 207);
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer-form{
+    padding: 1em;
+}
+.footer-form input[type=email]{
+    width: 80%;
+    border-radius: 10px;
+    padding: 1em;
+    outline: none;
+    border: 0px;
+    margin: 1em;
+}
+
+.footer-form input[type=submit]{
+    outline: none;
+    padding: 1em;
+    text-transform: uppercase;
+    border: 2px solid rgb(91, 236, 247);
+    background-color: rgb(224, 255, 252);
+    color: tomato;
+    transition: 0.2s;
+}
+.footer-form input[type=submit]:hover{
+    color: rgb(204, 255, 250);
+    background-color: rgb(174, 0, 255);
+    border: 2px solid rgb(255, 51, 102);
 }

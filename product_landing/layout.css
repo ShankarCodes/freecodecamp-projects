@@ -6,7 +6,6 @@ body, html{
 }
 .nav{
     display: flex;
-    justify-content: space-between;
     background-color: rgb(240, 240, 240);
     padding-bottom: 0.5em;
     padding-top: 0.5em;
@@ -20,20 +19,24 @@ body, html{
 }
 .links{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
-    width: 40%;
+    flex-direction: row;
+    width: 100%;
     padding-right: 1em;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav-link{
+    margin-right: 0.5em;
+    padding: 0.3em;
 }
 .main-container{
     display: flex;
     flex-direction: column;
 }
 #video{
-    width: 100%;
+    width: 90%;
     height: 50%;
-
+        flex-grow: 0.8;
 }
 
 .card-container{
@@ -48,13 +51,16 @@ body, html{
     flex-direction: column;
     padding-top: 1em;
     padding-bottom: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 .card-heading h3{
     font-size: 1.6em;
     font-weight: 400;
 }
 .fullpage{
-    height: 100vh;
+    /*height: 100vh;*/
+    min-height: 100vh;
     display: flex;
     justify-content:space-evenly; 
     flex-direction: column;
@@ -92,13 +98,23 @@ body, html{
     #video{
         width: 50%;
         height: 50%;
+        flex-grow: 0.8;
     }
     .links{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
-        width: 40%;
+        justify-content: flex-end;
+        width: 30%;
+        flex-wrap: nowrap;
+    }
+    .nav{
+        justify-content: space-between;
+    }
+    .nav-link{
+        margin-right: 0.5em;
+        margin-left: 0.5em;
+        padding: 1em;
     }
     .footer{
         flex-direction: column;
@@ -110,6 +126,8 @@ body, html{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        flex-direction: row;
+        width: 100%;
     }
     .card-container{
         flex-direction: row;
