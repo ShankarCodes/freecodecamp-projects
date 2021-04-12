@@ -1,0 +1,67 @@
+.fullpage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.fullpage .center {
+  align-self: center;
+  justify-self: center;
+  font-size: 3em;
+  margin-top: 5%;
+}
+.nav {
+  height: 100%;
+  width: 100%;
+  background-color: #003A3B;
+  color: #FA5D00;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+}
+.nav .links {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+  margin: 0;
+}
+.nav .links a {
+  color: #19FBFF;
+  text-decoration: none;
+  margin-right: 1em;
+  padding: 1em;
+  background-color: #194e4f;
+}
+.nav .links a:hover {
+  background-color: #336162;
+  color: #5efcff;
+}
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+}
+.main-container {
+  margin-top: 10vh;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 8fr 1fr;
+}
+.contacts {
+  display: flex;
+  min-height: 100%;
+  align-content: center;
+  justify-content: center;
+}
+.contacts i {
+  color: black;
+  transition: 0.2s;
+  border-radius: 50%;
+}
+.contacts i:hover {
+  color: #1f1f1f;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+}
