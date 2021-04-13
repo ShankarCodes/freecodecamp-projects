@@ -53,6 +53,7 @@
 .contacts {
   display: flex;
   min-height: 100%;
+  flex-direction: column;
   align-content: center;
   justify-content: center;
 }
@@ -60,8 +61,64 @@
   color: black;
   transition: 0.2s;
   border-radius: 50%;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
 }
 .contacts i:hover {
   color: #1f1f1f;
   box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .contacts {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 961px) {
+  .contacts {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+.footer {
+  text-align: center;
+  font-size: 1.2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #19FBFF;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-row-gap: 1em;
+  grid-column-gap: 10vw;
+  justify-content: center;
+  align-content: center;
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 961px) {
+  .cards {
+    flex-direction: row;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-right: 0;
+  padding-left: 0;
+}
+.card h3,
+.card p {
+  padding-right: 0;
+  padding-left: 0;
 }
