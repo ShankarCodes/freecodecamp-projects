@@ -99,7 +99,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 4vh;
-    grid-column-gap: 8vw;
+    grid-column-gap: 4vw;
     justify-content: center;
     align-content: center;
     width: 95%;
@@ -109,8 +109,8 @@
     }
     @media only screen and (min-width: 961px){
         width: 60%;
-        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
-        grid-column-gap: 10vw;
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        grid-column-gap: 5vw;
     }
 }
 .card{
@@ -126,6 +126,7 @@
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
     padding: 1em;
     transition: 0.2s;
+    min-width: 10vw;
     h3,p{
         padding-right: 0;
         padding-left: 0;
