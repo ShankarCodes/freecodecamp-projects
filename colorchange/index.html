@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="bundle.js" defer></script>
+    <title>
+        My portfolio
+    </title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        :root {
+            --main-background-color-1: black;
+            --main-background-color-2: white;
+        }
+
+        .main {
+            transition: 1s;
+            /*background: linear-gradient(45deg, var(--main-background-color-1),
+             var(--main-background-color-2));*/
+            background-color: var(--main-background-color-1);
+            height: 100vh;
+        }
+
+        p {
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <p>
+            This is body
+            <button type="button" onclick="changeColor()">Change color</button>
+        </p>
+    </div>
+</body>
+<script>
+    function changeColor() {
+        var randomColor = "#" + ((1 << 24) * Math.random() | 0).toString(16);
+        var randomColor2 = "#" + ((1 << 24) * Math.random() | 0).toString(16);
+        document.documentElement.style.setProperty('--main-background-color-1', randomColor);
+        document.documentElement.style.setProperty('--main-background-color-2', randomColor2);
+
+    }
+</script>
+
+</html>
